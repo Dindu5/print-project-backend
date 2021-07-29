@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "print_orders",
+  "info": {
+    "name": "printOrder",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "noOfCopies": {
+      "type": "integer"
+    },
+    "basicFormatting": {
+      "type": "boolean"
+    },
+    "documentVetting": {
+      "type": "boolean"
+    },
+    "proofReading": {
+      "type": "boolean"
+    },
+    "homeDelivery": {
+      "type": "boolean"
+    },
+    "state": {
+      "type": "string"
+    },
+    "lga": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "pickUpLocation": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "documentId": {
+      "type": "uid"
+    },
+    "status": {
+      "type": "string"
+    },
+    "noOfPages": {
+      "type": "integer"
+    },
+    "deliveryAddress": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "print_orders"
+    }
+  }
+}

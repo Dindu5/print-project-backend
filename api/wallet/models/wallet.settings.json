@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallets",
+  "info": {
+    "name": "wallet",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "biginteger"
+    },
+    "walletId": {
+      "type": "uid"
+    },
+    "organisation": {
+      "via": "wallet",
+      "model": "organisation"
+    },
+    "user": {
+      "via": "wallet",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

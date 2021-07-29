@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organisations",
+  "info": {
+    "name": "organisation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "organisationId": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "users": {
+      "via": "organisation",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "wallet": {
+      "model": "wallet",
+      "via": "organisation"
+    }
+  }
+}

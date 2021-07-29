@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/print-orders",
+      "handler": "print-order.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/print-orders/count",
+      "handler": "print-order.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/print-orders/:id",
+      "handler": "print-order.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/print-orders",
+      "handler": "print-order.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/print-orders/:id",
+      "handler": "print-order.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/print-orders/:id",
+      "handler": "print-order.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
