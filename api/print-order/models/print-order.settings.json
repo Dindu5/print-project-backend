@@ -73,9 +73,12 @@
       "type": "text"
     },
     "users_permissions_user": {
+      "via": "print_orders",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "print_orders"
+      "model": "user"
+    },
+    "amount": {
+      "type": "integer"
     }
   }
 }

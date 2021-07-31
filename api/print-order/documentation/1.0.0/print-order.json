@@ -711,6 +711,9 @@
                   "type": "string"
                 }
               },
+              "address": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -718,6 +721,9 @@
                 "type": "string"
               }
             }
+          },
+          "amount": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -777,6 +783,9 @@
           },
           "users_permissions_user": {
             "type": "string"
+          },
+          "amount": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

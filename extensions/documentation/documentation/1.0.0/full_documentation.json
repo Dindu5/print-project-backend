@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/29/2021 3:24:31 PM"
+    "x-generation-date": "07/31/2021 2:15:57 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3900,6 +3900,9 @@
                     "type": "string"
                   }
                 },
+                "address": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -4162,6 +4165,9 @@
                   "type": "string"
                 }
               },
+              "address": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -4169,6 +4175,9 @@
                 "type": "string"
               }
             }
+          },
+          "amount": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -4228,6 +4237,9 @@
           },
           "users_permissions_user": {
             "type": "string"
+          },
+          "amount": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -4352,6 +4364,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "address": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -4515,6 +4530,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "address": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4773,6 +4791,9 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "amount": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4784,6 +4805,9 @@
                 }
               }
             }
+          },
+          "address": {
+            "type": "string"
           }
         }
       },
@@ -4849,6 +4873,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "address": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

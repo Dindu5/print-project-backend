@@ -82,6 +82,9 @@
     "print_orders": {
       "via": "users_permissions_user",
       "collection": "print-order"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }

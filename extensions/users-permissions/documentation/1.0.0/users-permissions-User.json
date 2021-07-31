@@ -1395,6 +1395,9 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "amount": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1406,6 +1409,9 @@
                 }
               }
             }
+          },
+          "address": {
+            "type": "string"
           }
         }
       },
@@ -1471,6 +1477,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "address": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
