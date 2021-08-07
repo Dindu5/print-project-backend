@@ -30,6 +30,9 @@
     "wallet": {
       "model": "wallet",
       "via": "organisation"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }

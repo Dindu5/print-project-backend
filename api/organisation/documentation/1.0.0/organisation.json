@@ -637,6 +637,9 @@
               }
             }
           },
+          "address": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -661,6 +664,9 @@
             }
           },
           "wallet": {
+            "type": "string"
+          },
+          "address": {
             "type": "string"
           },
           "published_at": {

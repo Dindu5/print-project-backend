@@ -554,6 +554,9 @@
               "wallet": {
                 "type": "string"
               },
+              "address": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
