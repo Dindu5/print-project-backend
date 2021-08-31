@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  // ...
   email: {
     provider: "mailjet",
     providerOptions: {
@@ -13,5 +12,16 @@ module.exports = ({ env }) => ({
       defaultToName: "User",
     },
   },
-  // ...
+  upload: {
+    provider: "cloudinary",
+    providerOptions: {
+      cloud_name: env("CLOUDINARY_NAME"),
+      api_key: env("CLOUDINARY_KEY"),
+      api_secret: env("CLOUDINARY_SECRET"),
+    },
+    actionOptions: {
+      upload: {},
+      delete: {},
+    },
+  },
 });
